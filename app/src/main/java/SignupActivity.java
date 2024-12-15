@@ -6,6 +6,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.rapidrescue.R;
+
 public class SignupActivity extends AppCompatActivity {
 
     private EditText etFullName, etEmail, etPhone, etPassword, etConfirmPassword;
@@ -23,7 +25,7 @@ public class SignupActivity extends AppCompatActivity {
         etPhone = findViewById(R.id.etPhone);
         etPassword = findViewById(R.id.etPassword);
         etConfirmPassword = findViewById(R.id.etConfirmPassword);
-        checkboxTerms = findViewById(R.id.checkboxTerms);
+        checkboxTerms = findViewById(R.id.checkBoxRememberMe);
 
         // Setup listener for the form fields
         setupFieldListeners();

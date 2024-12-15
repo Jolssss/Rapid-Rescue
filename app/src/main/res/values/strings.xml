@@ -9,5 +9,7 @@
     <string name="btn_security">Security</string>
     <string name="btn_guidance">Guidance</string>
     <string name="btn_service">Service</string>
+    <string name="app_name">Rapid Rescue</string>
+
 
 </resources>

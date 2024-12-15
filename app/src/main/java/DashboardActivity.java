@@ -5,6 +5,8 @@ import android.widget.Button;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.rapidrescue.R;
+
 public class DashboardActivity extends AppCompatActivity {
 
     @SuppressLint("WrongViewCast")
@@ -13,10 +15,10 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        Button securityButton = findViewById(R.id.securityButton);
-        Button clinicButton = findViewById(R.id.clinicButton);
-        Button guidanceButton = findViewById(R.id.guidanceButton);
-        Button serviceButton = findViewById(R.id.serviceButton);
+        Button securityButton = findViewById(R.id.btnSecurity);
+        Button clinicButton = findViewById(R.id.btnClinic);
+        Button guidanceButton = findViewById(R.id.btnGuidance);
+        Button serviceButton = findViewById(R.id.btnService);
 
 
         securityButton.setOnClickListener(v -> showEmergencyDialog("School Security"));
