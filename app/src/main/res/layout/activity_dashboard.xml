@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue">
+
+    <!-- Red Alert Icons -->
+    <ImageView
+        android:id="@+id/iconAlertLeft"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo1"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/iconAlertRight"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/logo1"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleRapidRescue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iconAlertLeft"
+        android:layout_marginTop="20dp"
+        android:text="RAPID RESCUE"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        tools:ignore="HardcodedText" />
+
+    <!-- Security Button -->
+    <Button
+        android:id="@+id/btnSecurity"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleRapidRescue"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:background="@color/red"
+        android:text="SECURITY"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <!-- Clinic Button -->
+    <Button
+        android:id="@+id/btnClinic"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/btnSecurity"
+        android:layout_alignTop="@id/btnSecurity"
+        android:layout_marginStart="30dp"
+        android:background="@color/red"
+        android:text="CLINIC"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <!-- Guidance Button -->
+    <Button
+        android:id="@+id/btnGuidance"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSecurity"
+        android:layout_marginTop="30dp"
+        android:layout_alignStart="@id/btnSecurity"
+        android:background="@color/red"
+        android:text="GUIDANCE"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <!-- Service Button -->
+    <Button
+        android:id="@+id/btnService"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/btnGuidance"
+        android:layout_alignTop="@id/btnGuidance"
+        android:layout_marginStart="30dp"
+        android:background="@color/red"
+        android:text="SERVICE"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
